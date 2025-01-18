@@ -26,7 +26,7 @@ i {
 
 .header-icons a:hover i {
   animation: translateY 0.8s infinite alternate;
-  color: #d34040;
+  color: #d99940;
 }
 
 @keyframes translateY {
@@ -47,8 +47,8 @@ i {
 }
 
 .header-button:hover {
-  border: 1px solid #d34040;
-  background-color: #d34040;
+  border: 1px solid #d99940;
+  background-color: #d99940;
 }
 
 .header-logo {
@@ -56,6 +56,7 @@ i {
   align-items: center;
   justify-content: center;
   margin-top: 14px;
+  width: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,7 +92,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../img/bg.svg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.328), #06121e), url("../img/bg2.jpg");
   left: 0%;
   top: 0%;
   width: 100%;
@@ -100,7 +101,7 @@ i {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
-  opacity: 0.9;
+  opacity: 2.9;
 }
 
 .hero {
@@ -117,16 +118,19 @@ i {
   line-height: 150%;
   max-width: 940px;
   font-size: 46px;
+  text-transform: uppercase;
+  font-weight: 200;
 }
 .hero p {
   text-align: center;
   margin: 14px 0;
+  font-weight: 200;
 }
 
 .button-contact {
   padding: 14px 28px;
   color: #ffffff;
-  background-color: #D94140;
+  background-color: #d99940;
   border: 0;
   font-size: 18px;
   font-weight: 600;
@@ -187,10 +191,15 @@ i {
 .about-description h2 {
   font-size: 38px;
   margin-bottom: 24px;
+  font-weight: 200;
+  color: #d99940;
 }
 .about-description p {
   margin-bottom: 14px;
   line-height: 150%;
+}
+.about-description strong {
+  color: #d99940;
 }
 
 @media screen and (max-width: 768px) {
@@ -241,6 +250,55 @@ i {
 .haircut img {
   width: 100%;
   max-width: 354px;
+  transition: transform 0.2s;
+}
+
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.haircuts-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.haircuts-info button {
+  color: #ffffff;
+  background-color: #d99940;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: default;
+}
+
+@media screen and (max-width: 760px) {
+  .haircuts {
+    flex-direction: column;
+  }
+  .haircut img {
+    max-width: 740px;
+  }
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 0;
+  gap: 24;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 8px;
+  color: #ffffff;
 }
 
 body {
